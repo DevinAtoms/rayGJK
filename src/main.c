@@ -21,7 +21,7 @@ int main(void) {
     Polygon shape1 = NewPolygon(polysides, 100, BLUE, flat);
     Polygon shape2 = NewPolygon(polysides, 100, GREEN, flat);
 
-    Vector2 center = (Vector2) {GetScreenWidth() / 2, GetScreenHeight() / 2};
+    Vector2 center = (Vector2) {(float) GetScreenWidth() / 2, (float) GetScreenHeight() / 2};
 
     SetTargetFPS(60);
     while (!WindowShouldClose()) {

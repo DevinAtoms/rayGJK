@@ -22,7 +22,7 @@ file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/s
 set(PROJECT_INCLUDE "${CMAKE_CURRENT_LIST_DIR}/include/") # Define PROJECT_INCLUDE to be the path to the include directory of the project
 
 # Declaring our executable
-add_executable(${PROJECT_NAME} include/main.h src/main.c src/gjk.c src/gjk.c include/main.h src/shape.c)
+add_executable(${PROJECT_NAME} include/main.h src/main.c src/gjk.c src/shape.c)
 target_sources(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_INCLUDE})
